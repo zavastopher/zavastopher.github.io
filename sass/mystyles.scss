@@ -1,0 +1,71 @@
+// Set the character set and import bulma
+@charset "utf-8";
+
+// Import the body font
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+
+//"Brand" Colors
+$light-orange: #E8F8C1;
+$eggplant: #5E4B56;
+$tea-green: #FCD0A1;
+$culumbia-blue: #D2E6F3;
+$blush: #EA638C;
+
+//"Brand" Colors
+$blue: #335C67;
+$cream: #FFF3B0;
+$orange: #E09F3E;
+$crimson: #9E2A2B;
+$dark-red: #540B0E;
+
+//Updatee Bulma's global variables
+$family-sans-serif: "M PLUS 1 Code";
+$grey-dark: $dark-red;
+$grey-light: $crimson;
+$primary: $blue;
+$secondary: $crimson;
+$link: $orange;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+//Update Bulmas's component variables
+$box-background-color: $blue;
+$box-color: $primary;
+$body-background-color: $cream;
+$title-color: $grey-light;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$button-border-color: $blue;
+$navbar-item-active-color: $crimson;
+$navbar-background-color: $orange;
+$navbar-item-color: $cream;
+$navbar-item-active-color: $blue;
+$button-color: $cream;
+$button-text-color: $cream;
+$button-background-color: $blue;
+$button-hover-border-color: $blue;
+$button-hover-color: $orange;
+$navbar-item-hover-background-color: $blue;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
+@import "../node_modules/bulma/sass/helpers/flexbox.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+@import "../node_modules/bulma/sass/helpers/spacing.sass";
+@import "../node_modules/bulma/sass/elements/tag.sass";
+@import "../node_modules/bulma/sass/helpers/typography.sass";
+@import "../node_modules/bulma/sass/components/tabs.sass";
+@import "../node_modules/bulma/sass/helpers/visibility.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/helpers/color.sass";
+@import "../node_modules/bulma/sass/elements/icon.sass";
