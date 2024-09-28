@@ -1,8 +1,6 @@
 {
   "dependencies": {
     "bulma": "^0.9.4",
-    "jquery": "^3.7.1",
-    "jQuery": "^1.7.4",
     "node-sass": "^9.0.0",
     "sass": "^1.71.1"
   },
