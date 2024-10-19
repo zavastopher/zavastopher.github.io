@@ -5,7 +5,7 @@ export default {
         colors: {
             'dark': '#0E121D',
             'light': '#FFFFFF',
-            'middle': '#465071',
+            'middle': '#626F9A',
             'accent1': '#78CA9D',
             'accent2': '#D491B4',
         },
