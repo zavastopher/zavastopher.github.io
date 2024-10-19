@@ -1,13 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import { Image } from 'astro:assets';
+import logo from '../images/logo.svg';
 ---
 
 <Layout title="Hello There">
 	<main>  
         <div class="m-auto max-w-screen-md">
-            <div class="flex flex-row pt-20 ">
-                <div class="">
+            <div class="flex flex-shrink pt-20">
+                <Image src={logo} alt="A simplified logo of quetzocoatl" class="max-h-40 shrink"/>
+                <div class="grow">
                     <h1 class="text-accent1 text-3xl font-bold">Christopher Zavala</h1>
                     <h2 class="text-light text-xl font-bold">Software Developer <span class="text-middle"> | </span>Cary, NC</h2>
                 </div>
