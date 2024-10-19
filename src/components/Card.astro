@@ -8,8 +8,8 @@ interface Props {
 const { href, title, body } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
+<li class="bg-middle flex rounded-md">
+	<a href={href} class="p-5">
 		<h2>
 			{title}
 			<span>&rarr;</span>
@@ -24,7 +24,7 @@ const { href, title, body } = Astro.props;
 		list-style: none;
 		display: flex;
 		padding: 1px;
-		background-color: #23262d;
+		background-color: #0E121;
 		background-image: none;
 		background-size: 400%;
 		border-radius: 7px;
@@ -39,7 +39,7 @@ const { href, title, body } = Astro.props;
 		padding: calc(1.5rem - 1px);
 		border-radius: 8px;
 		color: white;
-		background-color: #23262d;
+		background-color: #0E121;
 		opacity: 0.8;
 	}
 	h2 {

@@ -24,7 +24,11 @@ export default {
             '6xl': '10rem',
             '7xl': '15rem',
         },
-		extend: {},
+		extend: {
+            spacing: {
+                'card': '400%',
+            },
+        },
 	},
 	plugins: [],
 }
