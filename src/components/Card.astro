@@ -8,7 +8,7 @@ interface Props {
 const { href, title, body } = Astro.props;
 ---
 
-<li class="bg-middle flex rounded-md">
+<li class="bg-middle flex rounded-md link-card">
 	<a href={href} class="p-5">
 		<h2>
 			{title}
@@ -21,41 +21,40 @@ const { href, title, body } = Astro.props;
 </li>
 <style>
 	.link-card {
-		list-style: none;
-		display: flex;
-		padding: 1px;
-		background-color: #0E121;
-		background-image: none;
-		background-size: 400%;
-		border-radius: 7px;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-	}
-	.link-card > a {
-		width: 100%;
-		text-decoration: none;
-		line-height: 1.4;
-		padding: calc(1.5rem - 1px);
-		border-radius: 8px;
+		z-index: 1;
+		position: relative;
+		font-size: inherit;
+		font-family: inherit;
 		color: white;
-		background-color: #0E121;
-		opacity: 0.8;
+		padding: 0.5em 1em;
+		outline: none;
+		border: none;
+		background-color: hsl(236, 32%, 26%);
+		overflow: hidden;
+		transition: color 0.4s ease-in-out;
 	}
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+
+	.link-card::before {
+		content: '';
+		z-index: -1;
+		position: absolute;
+		top: 100%;
+		right: 100%;
+		width: 5em;
+		height: 1.5em;
+		border-radius: 50%;
+		background-color: #78CA9D;
+		transform-origin: center;
+		transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+		transition: transform 0.45s ease-in-out;
 	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
+
+	.link-card:hover {
+		cursor: pointer;
+		color: #0E121D;
 	}
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
-	}
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent-light));
+
+	.link-card:hover::before {
+		transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
 	}
 </style>
