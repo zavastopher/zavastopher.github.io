@@ -1,21 +1,72 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Icon } from 'astro-icon/components'
 ---
 <Layout title="Christopher Zavala's Portfolio Site">
-    <main class="flex flex-col items-center gap-5 align-middle m-auto w-screen max-w-screen-md">
-        <div class="flex">
-            <div class="m-5 text-light">
+    <main class="flex flex-col items-center gap-5 align-middle m-auto w-screen max-w-screen-md pt-5">
+       
+        
+        <div class="flex gap-5 h-20">
+            <div class="flex flex-col items-center  text-light h-full">
+                <Icon name="skill-icons:css" class="h-full w-auto" />
                 CSS
             </div>
-            <div class="m-5 text-light">
-                
+            <div class="flex flex-col items-center  text-light h-full">
+                <Icon name="skill-icons:html" class="h-full w-auto"/>
                 HTML
             </div>
-            <div class="m-5 text-light">
+            <div class="flex flex-col items-center  text-light h-full">
+                <Icon name="skill-icons:javascript" class="h-full w-auto"/>
                 JS
             </div>
-            <div class="m-5 text-light">
+            <div class="flex flex-col items-center  text-light h-full">
+                <Icon name="skill-icons:astro" class="h-full w-auto"/>
                 AstroJs
+            </div>
+            <div class="flex flex-col items-center  text-light h-full">
+                <Icon name="skill-icons:tailwindcss-light" class="h-full w-auto"/>
+                TailwindCSS
+            </div>
+        </div>
+        
+        <div class="flex gap-5 h-20">
+            <div class="flex flex-col items-center  text-light h-full">
+                <Icon name="skill-icons:golang" class="h-full w-auto"/>
+               GO 
+            </div>
+            <div class="flex flex-col items-center  text-light h-full">
+                <Icon name="skill-icons:java-light" class="h-full w-auto"/>
+                Java
+            </div>
+            <div class="flex flex-col items-center  text-light h-full">
+                <Icon name="skill-icons:c" class="h-full w-auto"/>
+                C
+            </div>
+            <div class="flex flex-col items-center  text-light h-full">
+                <Icon name="skill-icons:python-light" class="h-full w-auto"/>
+                Python
+            </div>
+            <div class="flex flex-col items-center  text-light h-full">
+                <Icon name="skill-icons:flask-light" class="h-full w-auto"/>
+                Python Flask
+            </div>
+        </div>
+        
+        <div class="flex gap-5">
+            <div class="m-5 text-light">
+                Python Flask
+            </div>
+            <div class="m-5 text-light">
+                nGinx
+            </div>
+            <div class="m-5 text-light">
+                Docker
+            </div>
+            <div class="m-5 text-light">
+                MySQL
+            </div>
+            <div class="m-5 text-light">
+                SQLite
             </div>
         </div>
     </main>
