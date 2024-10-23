@@ -10,7 +10,7 @@ const { href, title, body } = Astro.props;
 
 <li class="bg-middle flex rounded-md link-card">
 	<a href={href} class="p-5">
-		<h2>
+		<h2 class="font-bold">
 			{title}
 			<span>&rarr;</span>
 		</h2>
@@ -40,7 +40,7 @@ const { href, title, body } = Astro.props;
 		position: absolute;
 		top: 100%;
 		right: 100%;
-		width: 5em;
+		width: 6rem;
 		height: 1.5em;
 		border-radius: 50%;
 		background-color: #78CA9D;
