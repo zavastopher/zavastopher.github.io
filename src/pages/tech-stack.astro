@@ -1,0 +1,114 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from 'astro-icon/components'
+---
+<Layout title="Christopher Zavala">
+    <main class="flex flex-col items-center gap-5 align-middle m-auto w-screen max-w-screen-md pt-5">
+        
+        <div class="flex flex-col gap-5">
+            <h1 class="text-accent2 font-bold text-2xl self-center">
+                Frontend
+            </h1>
+            <div class="flex flex-wrap gap-5 justify-center">
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:css" class="h-full w-auto" />
+                    CSS
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:html" class="h-full w-auto"/>
+                    HTML
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:javascript" class="h-full w-auto"/>
+                    JS
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:astro" class="h-full w-auto"/>
+                    Astro
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:tailwind" class="h-full w-auto"/>
+                    TailwindCSS
+                </div>
+            </div>
+            <div class="flex flex-col self-center more">
+                <span class="text-accent1 justify-center self-center hover:cursor-pointer hover:text-accent2 more-link">
+                    more &downarrow;
+                </span>
+                <p class="text-middle font-serif hidden">
+                    In the past I have worked on a variety of projects that have all used different frontend languages, tools, 
+                    and frameworks. You can read more about them in my <a href="/zavastopher.github.io/projects" class="font-bold text-accent2">projects</a> page 
+                    but above are the tools I am most familiar with. I have used <span class="font-bold">CSS</span> and 
+                    <span class="font-bold">HTML</span> to create web pages alongside <span class="font-bold">JS</span> scripts 
+                    without the aid of any frameworks or libraries. I have also used libraries such as bulma and bootstrap for 
+                    one off projects but did not list them as I do not use them regularly
+                </p>    
+            </div>
+            
+        </div>
+        <div class="flex flex-col gap-5">
+            <h1 class="text-accent2 font-bold text-2xl self-center">
+                Backend
+            </h1>
+            <div class="flex flex-wrap gap-5 justify-center">
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:go" class="h-full w-auto"/>
+                    GO 
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:java" class="h-full w-auto"/>
+                    Java
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:c" class="h-full w-auto"/>
+                    C
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:python" class="h-full w-auto"/>
+                    Python
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="skill-icons:flask-dark" class="h-full w-auto"/>
+                    Python Flask
+                </div>
+                <div class="flex flex-col items-center text-light h-20">
+                    <Icon name="catppuccin:package-json" class="h-full w-auto"/>
+                    NodeJs 
+                </div>
+                <div class="flex flex-col items-center text-light h-20">
+                    <Icon name="catppuccin:nginx" class="h-full w-auto"/>
+                    nGinx
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h1 class="text-accent2 font-bold text-2xl">
+                Databases
+            </h1>
+            <div class="flex flex-wrap gap-5 justify-center">
+                <div class="flex flex-col items-center text-light h-20">
+                    <Icon name="skill-icons:mysql-dark" class="h-full w-auto"/>
+                    MySQL
+                </div>
+                <div class="flex flex-col items-center text-light h-20">
+                    <Icon name="skill-icons:sqlite" class="h-full w-auto"/>
+                    SQLite
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
+<script>
+    function expandText() {
+        console.log('click');
+    }
+    function collapseText() {
+
+    }
+    let elements = document.getElementsByClassName('more')
+    for(let i = 0; i < elements.length; i++){
+        elements[i].getElementsByClassName('more-link')[0].addEventListener("click", expandText);
+        
+    }
+    console.log(elements)
+</script>
