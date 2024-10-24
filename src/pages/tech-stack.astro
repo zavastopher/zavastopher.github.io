@@ -32,17 +32,18 @@ import { Icon } from 'astro-icon/components'
                 </div>
             </div>
             <div class="flex flex-col self-center more">
-                <span class="text-accent1 justify-center self-center hover:cursor-pointer hover:text-accent2 more-link">
-                    more &downarrow;
-                </span>
-                <p class="text-middle font-serif hidden">
+                <p class="text-middle font-serif hidden more-body">
                     In the past I have worked on a variety of projects that have all used different frontend languages, tools, 
                     and frameworks. You can read more about them in my <a href="/zavastopher.github.io/projects" class="font-bold text-accent2">projects</a> page 
                     but above are the tools I am most familiar with. I have used <span class="font-bold">CSS</span> and 
                     <span class="font-bold">HTML</span> to create web pages alongside <span class="font-bold">JS</span> scripts 
                     without the aid of any frameworks or libraries. I have also used libraries such as bulma and bootstrap for 
                     one off projects but did not list them as I do not use them regularly
-                </p>    
+                </p>
+                <span class="text-accent1 justify-center self-center hover:cursor-pointer hover:text-accent2 more-link">
+                    more &downarrow;
+                </span>
+                    
             </div>
             
         </div>
@@ -99,13 +100,24 @@ import { Icon } from 'astro-icon/components'
     </main>
 </Layout>
 <script>
-    function expandText(elem: Event) {
+    function expandText(this: HTMLElement, e: Event) {
+        let textBody = this.parentElement?.getElementsByClassName("more-body")[0]
+        if(textBody?.classList.contains("hidden")){
+            textBody.classList.remove("hidden")
+            textBody.classList.add("block")
+            this.innerHTML = "less &uparrow;"
+        } else {
+            textBody?.classList.remove("block")
+            textBody?.classList.add("hidden")
+            this.innerHTML = "more &downarrow;"
+        }
     }
     function collapseText() {
 
     }
     let elements = document.getElementsByClassName('more')
     for(let i = 0; i < elements.length; i++){
+        let textBody = elements[i].getElementsByClassName('more-body')[0]
         elements[i].getElementsByClassName('more-link')[0].addEventListener("click", expandText);
     }
     console.log(elements)
