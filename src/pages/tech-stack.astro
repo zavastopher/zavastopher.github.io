@@ -99,8 +99,7 @@ import { Icon } from 'astro-icon/components'
     </main>
 </Layout>
 <script>
-    function expandText() {
-        console.log('click');
+    function expandText(elem: Event) {
     }
     function collapseText() {
 
@@ -108,7 +107,6 @@ import { Icon } from 'astro-icon/components'
     let elements = document.getElementsByClassName('more')
     for(let i = 0; i < elements.length; i++){
         elements[i].getElementsByClassName('more-link')[0].addEventListener("click", expandText);
-        
     }
     console.log(elements)
 </script>
