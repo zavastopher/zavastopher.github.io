@@ -1,26 +1,92 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Image from "astro/components/Image.astro";
+import Card from "../components/Card.astro";
 ---
 <Layout title="Chris Zavala">
-    <div>
-        <div>
-            <h1>Fallout-TTRPG-Pip-Boy</h1>
+    <a class="text-dark bg-middle rounded-xl link-card hover:text-accent2">
+        <div class="p-3">
+            <h1 class="font-bold pb-2">Fallout-TTRPG-Pip-Boy</h1>
+            <p>
+
+            </p>
+            <ul class="list-disc pl-5 w-full">
+
+            </ul>
         </div>
-    </div>
-    <div>
-        <div>
-            <h1>Wolfwatch</h1>
+    </a>
+    <a class="text-dark bg-middle rounded-xl link-card hover:text-accent2">
+        <div class="p-3">
+            <h1 class="font-bold pb-2">Wolfwatch</h1>
+            <p>
+
+            </p>
+            <ul class="list-disc pl-5 w-full">
+
+            </ul>
         </div>
-    </div>
-    <div>
-        <div>
-            <h1>Dungeons and Sounds</h1>
+    </a>
+    <a class="text-dark bg-middle rounded-xl link-card hover:text-accent2">
+        <div class="p-3">
+            <h1 class="font-bold pb-2">BlackJack</h1>
+            <p>
+            </p>
+            <ul class="list-disc pl-5 w-full">
+            </ul>
         </div>
-    </div>
-    <div>
-        <div>
-            <h1>BlackJack</h1>
+    </a>
+    <a class="text-dark bg-middle rounded-xl link-card hover:text-accent2">
+        <div class="p-3">
+            <h1 class="font-bold pb-2">Dungeons and Sounds</h1>
+            <p>
+                A Table Top RPG Simulator that maps the results to MIDI output.
+            </p>
+            <ul class="list-disc pl-5 w-full">
+                <li>Python</li>
+                <li>Algorithm Design</li>
+                <li>Python Simulation</li>
+                <li>Data Mapping</li>
+            </ul>
         </div>
-    </div>
+    </a>
+    
 </Layout>
+<style>
+	.link-card {
+		z-index: 1;
+		position: relative;
+		font-size: inherit;
+		font-family: inherit;
+		color: white;
+		padding: 0.5em 1em;
+		outline: none;
+		border: none;
+		background-color: hsl(236, 32%, 26%);
+		overflow: hidden;
+		transition: color 0.4s ease-in-out;
+	}
+
+	.link-card::before {
+		content: '';
+		z-index: -1;
+		position: absolute;
+		top: 100%;
+		right: 100%;
+		width: 6rem;
+		height: 6em;
+		border-radius: 50%;
+		background-color: #78CA9D;
+		transform-origin: center;
+		transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+		transition: transform 0.45s ease-in-out;
+	}
+
+	.link-card:hover {
+		cursor: pointer;
+		color: #0E121D;
+	}
+
+	.link-card:hover::before {
+		transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+	}
+</style>
