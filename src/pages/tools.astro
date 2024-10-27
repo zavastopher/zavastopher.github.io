@@ -122,7 +122,7 @@ import Layout from "../layouts/Layout.astro";
     
 </Layout>
 <script>
-    function expandText(this: HTMLElement, e: Event) {
+    function expandText(this: HTMLElement) {
         let textBody = this.parentElement?.getElementsByClassName("more-body")[0]
         if(textBody?.classList.contains("hidden")){
             textBody.classList.remove("hidden")
@@ -134,12 +134,8 @@ import Layout from "../layouts/Layout.astro";
             this.innerHTML = "more &downarrow;"
         }
     }
-    function collapseText() {
-
-    }
     let elements = document.getElementsByClassName('more')
     for(let i = 0; i < elements.length; i++){
-        let textBody = elements[i].getElementsByClassName('more-body')[0]
         elements[i].getElementsByClassName('more-link')[0].addEventListener("click", expandText);
     }
     console.log(elements)
