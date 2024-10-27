@@ -1,12 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from 'astro:assets';
-import Card from "../components/Card.astro";
 import fallout from '../images/fallout-ttrpg-pip-boy.png';
 import wolfwatch from '../images/wolfwatch.png';
 import blackjack from '../images/blackjack.png';
+import { Icon } from "astro-icon/components";
+import dungeonsandsounds from "../images/dungeonsandsounds.png";
 ---
 <Layout title="Chris Zavala">
+    <h1 class="font-bold text-accent2 text-3xl pt-5">Projects</h1>
     <a class="flex text-dark bg-middle rounded-xl link-card w-full" href="https://github.com/zavastopher/Fallout-TTRPG-WebApp" target="_blank">
         <Image src={fallout} alt="an image of a fallout pip boy" class="max-w-sm"/>
         <div class="p-3 flex flex-col gap-5 h-full">
@@ -14,16 +16,15 @@ import blackjack from '../images/blackjack.png';
             <p>
                 A Pip-Boy style web-app for managing character sheets for the Fallout-TTRPG
             </p>
-            <span class="font-bold">Tags: </span>
             <div class="flex flex-wrap gap-1 text-middle">
-                <span class="tag">Full-Stack Web-app</span>
-                <span class="tag">React</span>
-                <span class="tag">Python Flask</span>
-                <span class="tag">nGinx</span>
-                <span class="tag">Docker</span>
-                <span class="tag">API Design</span>
-                <span class="tag">npm</span>
-                <span class="tag">NodeJS</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Full-Stack Web-app</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />React</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Python Flask</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />nGinx</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Docker</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />API Design</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />npm</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />NodeJS</span>
             </div>
         </div>
     </a>
@@ -34,17 +35,16 @@ import blackjack from '../images/blackjack.png';
             <p>
                 An assignment web-scanner
             </p>
-            <span class="font-bold">Tags: </span>
             <div class="flex flex-wrap gap-1 text-middle">
-                <span class="tag">Full-Stack Web-App</span>
-                <span class="tag">NLP</span>
-                <span class="tag">Selenium</span>
-                <span class="tag">Python Flask</span>
-                <span class="tag">nGinx</span>
-                <span class="tag">NextJs</span>
-                <span class="tag">Redis</span>
-                <span class="tag">Celery</span>
-                <span class="tag">Docker</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Full-Stack Web-App</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />NLP</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Selenium</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Python Flask</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />nGinx</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />NextJs</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Redis</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Celery</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Docker</span>
             </div>
         </div>
     </a>
@@ -55,32 +55,30 @@ import blackjack from '../images/blackjack.png';
             <p>
                 A Blackjack Practicing Web-App
             </p>
-
-            <span class="font-bold">Tags: </span>
             <p class="flex flex-wrap gap-1 text-middle">
-                <span class="tag">Full-Stack Web-App</span>
-                <span class="tag">NodeJS</span>
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">nGinx</span>
-                <span class="tag">User Authentication</span>
-                <span class="tag">Progressive Web-App</span>
-                <span class="tag">Docker</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Full-Stack Web-App</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />NodeJS</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />HTML</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />CSS</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />nGinx</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />User Authentication</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Progressive Web-App</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Docker</span>
             </p>
         </div>
     </a>
     <a class="flex text-dark bg-middle rounded-xl link-card  w-full h-fit:w" href="https://github.com/zavastopher/Dungeons-And-Sounds?tab=readme-ov-file" target="_blank">
+        <Image src={dungeonsandsounds} alt="an image of a pixel character with a hood and sword" class="max-w-sm" />
         <div class="p-3 flex flex-col gap-5 h-full">
             <h1 class="font-bold pb-2">Dungeons and Sounds</h1>
             <p>
                 A Table Top RPG Simulator that maps the results to MIDI output.
             </p>
-            <span class="font-bold">Tags: </span>
             <p class="flex flex-wrap gap-1 text-middle">
-                <span class="tag">Python</span>
-                <span class="tag">Algorithm Design</span>
-                <span class="tag">Python Simulation</span>
-                <span class="tag">Data Mapping</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Python</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Algorithm Design</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Python Simulation</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Data Mapping</span>
             </p>
                 
         </div>
@@ -107,7 +105,7 @@ import blackjack from '../images/blackjack.png';
 		top: 100%;
 		right: 100%;
 		width: 7rem;
-		height: 7rem;
+		height: 8rem;
 		border-radius: 50%;
 		background-color: #78CA9D;
 		transform-origin: center;
