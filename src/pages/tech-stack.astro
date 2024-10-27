@@ -1,0 +1,154 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from 'astro-icon/components'
+---
+<Layout title="Christopher Zavala">
+    <main class="flex flex-col items-center gap-5 align-middle m-auto w-screen max-w-screen-md pt-5">
+        
+        <div class="flex flex-col gap-5">
+            <h1 class="text-accent2 font-bold text-2xl self-center">
+                Frontend
+            </h1>
+            <div class="flex flex-wrap gap-5 justify-center">
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:css" class="h-full w-auto" />
+                    CSS
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:html" class="h-full w-auto"/>
+                    HTML
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:javascript" class="h-full w-auto"/>
+                    JS
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:astro" class="h-full w-auto"/>
+                    Astro
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:tailwind" class="h-full w-auto"/>
+                    TailwindCSS
+                </div>
+            </div>
+            <div class="flex flex-col self-center more">
+                <p class="text-middle font-serif hidden more-body">
+                    In the past I have worked on a variety of projects that have all used different frontend languages, tools, 
+                    and frameworks. You can read more about them in my <a href="/zavastopher.github.io/projects" class="font-bold text-accent2">projects</a> page 
+                    but above are the tools I am most familiar with. I have used <span class="font-bold">CSS</span> and 
+                    <span class="font-bold">HTML</span> to create web pages alongside <span class="font-bold">JS</span> scripts 
+                    without the aid of any frameworks or libraries. I have also used libraries such as bulma and bootstrap for 
+                    one off projects but did not list them as I do not use them regularly
+                </p>
+                <span class="text-accent1 justify-center self-center hover:cursor-pointer hover:text-accent2 more-link">
+                    more &downarrow;
+                </span>
+                    
+            </div>
+            
+        </div>
+        <div class="flex flex-col gap-5">
+            <h1 class="text-accent2 font-bold text-2xl self-center">
+                Backend
+            </h1>
+            <div class="flex flex-wrap gap-5 justify-center">
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:go" class="h-full w-auto"/>
+                    GO 
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:java" class="h-full w-auto"/>
+                    Java
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:c" class="h-full w-auto"/>
+                    C
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="catppuccin:python" class="h-full w-auto"/>
+                    Python
+                </div>
+                <div class="flex flex-col items-center  text-light h-20">
+                    <Icon name="skill-icons:flask-dark" class="h-full w-auto"/>
+                    Python Flask
+                </div>
+                <div class="flex flex-col items-center text-light h-20">
+                    <Icon name="catppuccin:package-json" class="h-full w-auto"/>
+                    NodeJs 
+                </div>
+                <div class="flex flex-col items-center text-light h-20">
+                    <Icon name="catppuccin:nginx" class="h-full w-auto"/>
+                    nGinx
+                </div>
+            </div>
+            <div class="flex flex-col self-center more">
+                <p class="text-middle font-serif hidden more-body">
+                    For my two largest projects, Wolfwatch and Fallout-TTRPG-Pip-Boy, I have extensively worked with Python Flask 
+                    to create the API. I have also used NodeJS to build school projects as I took a client-server computing class 
+                    that required us to learn CSS, HTML, and Javascript without any frameworks, with the idea being if we used 
+                    Javascript on the server we would learn Javascript on a deeper level along with nGinx to teach us the basics 
+                    of how a reverse proxy is used. During My time at NCSU I also learned C and Java as the two languages used to 
+                    teach us the fundamentals of computer science. Java was used extensively from the start of the curriculum to 
+                    the end. C on the other hand was used during my OS and Systems level programming courses. Finally I am 
+                    currently learning GO by building a few projects as I am excited by it's performance promises and async 
+                    capabilities. I plan on using it where possible when creating projects from here on out. 
+                </p>
+                <span class="text-accent1 justify-center self-center hover:cursor-pointer hover:text-accent2 more-link">
+                    more &downarrow;
+                </span>
+                    
+            </div>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h1 class="text-accent2 font-bold text-2xl self-center">
+                Databases
+            </h1>
+            <div class="flex flex-wrap gap-5 justify-center">
+                <div class="flex flex-col items-center text-light h-20">
+                    <Icon name="skill-icons:mysql-dark" class="h-full w-auto"/>
+                    MySQL
+                </div>
+                <div class="flex flex-col items-center text-light h-20">
+                    <Icon name="skill-icons:sqlite" class="h-full w-auto"/>
+                    SQLite
+                </div>
+            </div>
+            <div class="flex flex-col self-center more">
+                <p class="text-middle font-serif hidden more-body">
+                    When it comes to databases most of my experience has been revolving around SQL. During my time at NCSU
+                    I took a databases course that focused on the fundamentals of relational databases, using MySQL as the
+                    database of choice. I have since added SQLite to my belt as it is the main database being used on my
+                    Fallout-TTRPG-Pip-Boy project. This was because the project is meant to handle a relatively small amount 
+                    of users so SQLite seemed more than capable of fitting our needs. I plan on working with NoSQL databases 
+                    future where they seem to be the best fit, but I haven't had the opportunity to employ one quite yet.
+                </p>
+                <span class="text-accent1 justify-center self-center hover:cursor-pointer hover:text-accent2 more-link">
+                    more &downarrow;
+                </span>
+            </div>
+        </div>
+    </main>
+</Layout>
+<script>
+    function expandText(this: HTMLElement, e: Event) {
+        let textBody = this.parentElement?.getElementsByClassName("more-body")[0]
+        if(textBody?.classList.contains("hidden")){
+            textBody.classList.remove("hidden")
+            textBody.classList.add("block")
+            this.innerHTML = "less &uparrow;"
+        } else {
+            textBody?.classList.remove("block")
+            textBody?.classList.add("hidden")
+            this.innerHTML = "more &downarrow;"
+        }
+    }
+    function collapseText() {
+
+    }
+    let elements = document.getElementsByClassName('more')
+    for(let i = 0; i < elements.length; i++){
+        let textBody = elements[i].getElementsByClassName('more-body')[0]
+        elements[i].getElementsByClassName('more-link')[0].addEventListener("click", expandText);
+    }
+    console.log(elements)
+</script>
