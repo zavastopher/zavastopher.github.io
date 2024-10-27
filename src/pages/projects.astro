@@ -7,47 +7,48 @@ import wolfwatch from '../images/wolfwatch.png';
 import blackjack from '../images/blackjack.png';
 ---
 <Layout title="Chris Zavala">
-    <a class="flex text-dark bg-middle rounded-xl link-card hover:text-accent2 w-full" href="https://github.com/zavastopher/Fallout-TTRPG-WebApp" target="_blank">
+    <a class="flex text-dark bg-middle rounded-xl link-card w-full" href="https://github.com/zavastopher/Fallout-TTRPG-WebApp" target="_blank">
         <Image src={fallout} alt="an image of a fallout pip boy" class="max-w-sm"/>
-        <div class="p-3 ">
+        <div class="p-3 flex flex-col gap-5 h-full">
             <h1 class="font-bold pb-2">Fallout-TTRPG-Pip-Boy</h1>
             <p>
                 A Pip-Boy style web-app for managing character sheets for the Fallout-TTRPG
             </p>
-            <ul class="list-disc pl-5 w-full">
-                <li>Full-Stack Web-app</li>
-                <li>React</li>
-                <li>Python Flask</li>
-                <li>nGinx</li>
-                <li>Docker</li>
-                <li>API Design</li>
-                <li>SQLite</li>
-                <li>npm</li>
-                <li>NodeJS</li>
-            </ul>
+            <span class="font-bold">Tags: </span>
+            <div class="flex flex-wrap gap-1 text-middle">
+                <span class="tag">Full-Stack Web-app</span>
+                <span class="tag">React</span>
+                <span class="tag">Python Flask</span>
+                <span class="tag">nGinx</span>
+                <span class="tag">Docker</span>
+                <span class="tag">API Design</span>
+                <span class="tag">npm</span>
+                <span class="tag">NodeJS</span>
+            </div>
         </div>
     </a>
-    <a class="flex text-dark bg-middle rounded-xl link-card hover:text-accent2 w-full" href="https://github.com/zavastopher/wolfwatch" target="_blank">
+    <a class="flex text-dark bg-middle rounded-xl link-card  w-full" href="https://github.com/zavastopher/wolfwatch" target="_blank">
         <Image src={wolfwatch} alt="an image of a wolfwatch user frontend" class="max-w-sm"/>
-        <div class="p-3">
-            <h1 class="font-bold pb-2">Wolfwatch</h1>
+        <div class="p-3 flex flex-col gap-5 h-full">
+            <h1 class="font-bold">Wolfwatch</h1>
             <p>
                 An assignment web-scanner
             </p>
-            <ul class="list-disc pl-5 w-full">
-                <li>Full-Stack Web-App</li>
-                <li>NLP</li>
-                <li>Selenium</li>
-                <li>Python Flask</li>
-                <li>nGinx</li>
-                <li>NextJs</li>
-                <li>Redis</li>
-                <li>Celery</li>
-                <li>Docker</li>
-            </ul>
+            <span class="font-bold">Tags: </span>
+            <div class="flex flex-wrap gap-1 text-middle">
+                <span class="tag">Full-Stack Web-App</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Selenium</span>
+                <span class="tag">Python Flask</span>
+                <span class="tag">nGinx</span>
+                <span class="tag">NextJs</span>
+                <span class="tag">Redis</span>
+                <span class="tag">Celery</span>
+                <span class="tag">Docker</span>
+            </div>
         </div>
     </a>
-    <a class="flex text-dark bg-middle rounded-xl link-card hover:text-accent2 w-full h-fit" href="https://github.com/zavastopher/blackjack" target="_blank">
+    <a class="flex text-dark bg-middle rounded-xl link-card  w-full h-fit" href="https://github.com/zavastopher/blackjack" target="_blank">
         <Image src={blackjack} alt="an image of a blackjack login page" class="max-w-sm"/>
         <div class="p-3 flex flex-col gap-5 h-full">
             <h1 class="font-bold">BlackJack</h1>
@@ -56,7 +57,7 @@ import blackjack from '../images/blackjack.png';
             </p>
 
             <span class="font-bold">Tags: </span>
-            <p class="flex flex-wrap gap-1 text-dark">
+            <p class="flex flex-wrap gap-1 text-middle">
                 <span class="tag">Full-Stack Web-App</span>
                 <span class="tag">NodeJS</span>
                 <span class="tag">HTML</span>
@@ -68,18 +69,20 @@ import blackjack from '../images/blackjack.png';
             </p>
         </div>
     </a>
-    <a class="flex text-dark bg-middle rounded-xl link-card hover:text-accent2 w-full" href="https://github.com/zavastopher/Dungeons-And-Sounds?tab=readme-ov-file" target="_blank">
-        <div class="p-3">
+    <a class="flex text-dark bg-middle rounded-xl link-card  w-full h-fit:w" href="https://github.com/zavastopher/Dungeons-And-Sounds?tab=readme-ov-file" target="_blank">
+        <div class="p-3 flex flex-col gap-5 h-full">
             <h1 class="font-bold pb-2">Dungeons and Sounds</h1>
             <p>
                 A Table Top RPG Simulator that maps the results to MIDI output.
             </p>
-            <ul class="list-disc pl-5 w-full">
-                <li>Python</li>
-                <li>Algorithm Design</li>
-                <li>Python Simulation</li>
-                <li>Data Mapping</li>
-            </ul>
+            <span class="font-bold">Tags: </span>
+            <p class="flex flex-wrap gap-1 text-middle">
+                <span class="tag">Python</span>
+                <span class="tag">Algorithm Design</span>
+                <span class="tag">Python Simulation</span>
+                <span class="tag">Data Mapping</span>
+            </p>
+                
         </div>
     </a>
     
@@ -90,10 +93,9 @@ import blackjack from '../images/blackjack.png';
 		position: relative;
 		font-size: inherit;
 		font-family: inherit;
-		color: white;
 		outline: none;
 		border: none;
-		background-color: hsl(236, 32%, 26%);
+		//background-color: hsl(236, 32%, 26%);
 		overflow: hidden;
 		transition: color 0.4s ease-in-out;
 	}
@@ -123,9 +125,9 @@ import blackjack from '../images/blackjack.png';
 	}
     
     .tag {
-        background-color: #D491B4;
-        padding-left: .2rem;
-        padding-right: .2rem;
+        background-color: #151a29;
+        padding: .2rem;
         border-radius: .2rem;
+        //color: #78CA9D;
     }
 </style>
