@@ -1,0 +1,131 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import fallout from '../images/fallout-ttrpg-pip-boy.png';
+import wolfwatch from '../images/wolfwatch.png';
+import blackjack from '../images/blackjack.png';
+import { Icon } from "astro-icon/components";
+import dungeonsandsounds from "../images/dungeonsandsounds.png";
+---
+<Layout title="Chris Zavala">
+    <h1 class="font-bold text-accent2 text-3xl pt-5">Projects</h1>
+    <a class="group flex text-dark bg-accent2 rounded-xl link-card w-full" href="https://github.com/zavastopher/Fallout-TTRPG-WebApp" target="_blank">
+        <Image src={fallout} alt="an image of a fallout pip boy" class="max-w-sm"/>
+        <div class="p-3 flex flex-col gap-5 h-full">
+            <h1 class="font-bold pb-2">Fallout-TTRPG-Pip-Boy</h1>
+            <p>
+                A Pip-Boy style web-app for managing character sheets for the Fallout-TTRPG
+            </p>
+            <div class="flex flex-wrap gap-1 text-accent2 group-hover:text-accent1 ease-in duration-500">
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Full-Stack Web-app</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />React</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Python Flask</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />nGinx</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Docker</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />API Design</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />npm</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />NodeJS</span>
+            </div>
+        </div>
+    </a>
+    <a class="group flex text-dark bg-accent2 rounded-xl link-card  w-full" href="https://github.com/zavastopher/wolfwatch" target="_blank">
+        <Image src={wolfwatch} alt="an image of a wolfwatch user frontend" class="max-w-sm"/>
+        <div class="p-3 flex flex-col gap-5 h-full">
+            <h1 class="font-bold">Wolfwatch</h1>
+            <p>
+                An assignment web-scanner
+            </p>
+            <div class="flex flex-wrap gap-1 text-accent2 group-hover:text-accent1 ease-in duration-500">
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Full-Stack Web-App</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />NLP</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Selenium</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Python Flask</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />nGinx</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />NextJs</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Redis</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Celery</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Docker</span>
+            </div>
+        </div>
+    </a>
+    <a class="group flex text-dark bg-accent2 rounded-xl link-card  w-full h-fit" href="https://github.com/zavastopher/blackjack" target="_blank">
+        <Image src={blackjack} alt="an image of a blackjack login page" class="max-w-sm"/>
+        <div class="p-3 flex flex-col gap-5 h-full">
+            <h1 class="font-bold">BlackJack</h1>
+            <p>
+                A Blackjack Practicing Web-App
+            </p>
+            <div class="flex flex-wrap gap-1 text-accent2 group-hover:text-accent1 ease-in duration-500">
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Full-Stack Web-App</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />NodeJS</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />HTML</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />CSS</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />nGinx</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />User Authentication</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Progressive Web-App</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Docker</span>
+            </div>
+        </div>
+    </a>
+    <a class="group flex text-dark bg-accent2 rounded-xl link-card  w-full h-fit:w" href="https://github.com/zavastopher/Dungeons-And-Sounds?tab=readme-ov-file" target="_blank">
+        <Image src={dungeonsandsounds} alt="an image of a pixel character with a hood and sword" class="max-w-sm" />
+        <div class="p-3 flex flex-col gap-5 h-full">
+            <h1 class="font-bold pb-2">Dungeons and Sounds</h1>
+            <p>
+                A Table Top RPG Simulator that maps the results to MIDI output.
+            </p>
+            <div class="flex flex-wrap gap-1 text-accent2 group-hover:text-accent1 ease-in duration-500">
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Python</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Algorithm Design</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Python Simulation</span>
+                <span class="flex items-center tag"><Icon name="mingcute:tag-line" />Data Mapping</span>
+            </div>
+                
+        </div>
+    </a>
+    
+</Layout>
+<style>
+	.link-card {
+		z-index: 1;
+		position: relative;
+		font-size: inherit;
+		font-family: inherit;
+		outline: none;
+		border: none;
+		//background-color: hsl(236, 32%, 26%);
+		overflow: hidden;
+		transition: color 0.4s ease-in-out;
+	}
+
+	.link-card::before {
+		content: '';
+		z-index: -1;
+		position: absolute;
+		top: 100%;
+		right: 100%;
+		width: 7rem;
+		height: 8rem;
+		border-radius: 50%;
+		background-color: #78CA9D;
+		transform-origin: center;
+		transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+		transition: transform 0.45s ease-in-out;
+	}
+
+	.link-card:hover {
+		cursor: pointer;
+		color: #0E121D;
+	}
+
+	.link-card:hover::before {
+		transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+	}
+    
+    .tag {
+        background-color: #151a29;
+        padding: .2rem;
+        border-radius: .2rem;
+        //color: #78CA9D;
+    }
+</style>

@@ -1,0 +1,146 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Christopher Zavala">
+    <div class="flex flex-col gap-5 pt-5">
+        <h1 class="text-accent2 font-bold text-2xl self-center">
+            Version Control
+        </h1>
+        <div class="flex flex-wrap gap-5 justify-center">
+            <div class="flex flex-col items-center text-light h-20">
+                <Icon name="catppuccin:git" class="h-full w-auto"/>
+                Git
+            </div>
+            <div class="flex flex-col items-center text-light h-20">
+                <Icon name="skill-icons:github-dark" class="h-full w-auto" /> 
+                Github
+            </div>
+        </div>
+        <div class="flex flex-col self-center more">
+            <p class="text-middle font-serif hidden more-body">
+                My preferred tools for version control are Git and Github. I have used both for going on 6 years 
+                and at this point I have become very familiar with them. This experience ranges from my very first
+                hello world assignments to the building and deployment of full stack web-applications while working 
+                on a team with various branches and consistent merges.
+            </p>
+            <span class="text-accent1 justify-center self-center hover:cursor-pointer hover:text-accent2 more-link">
+                more &downarrow;
+            </span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-5">
+        <h1 class="text-accent2 font-bold text-2xl self-center">
+            Deployment
+        </h1>
+        <div class="flex flex-wrap gap-5 justify-center">
+            <div class="flex flex-col items-center text-light h-20">
+                <Icon name="catppuccin:docker" class="h-full w-auto"/>
+                Docker
+            </div>
+            <div class="flex flex-col items-center text-light h-20">
+                <Icon name="catppuccin:docker-compose" class="h-full w-auto"/>
+                Docker-Compose
+            </div>
+        </div>
+        <div class="flex flex-col self-center more">
+            <p class="text-middle font-serif hidden more-body">
+                I learned how to use Docker during my last semester at NCSU. During that time I ended up completing 
+                three different projects that each leveraged Docker. I used the containers to spin up clients, servers,
+                and reverse proxies for each project during development. One of the projects was also hosted on a 
+                server hosted by the school so that we could get familiar with ssh management of our deployed servers.
+            </p>
+            <span class="text-accent1 justify-center self-center hover:cursor-pointer hover:text-accent2 more-link">
+                more &downarrow;
+            </span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-5">
+        <h1 class="text-accent2 font-bold text-2xl self-center">
+           IDEs/Text Editors 
+        </h1>
+        <div class="flex flex-wrap gap-5 justify-center">
+            <div class="flex flex-col items-center text-light h-20">
+                <Icon name="skill-icons:vscodium-dark" class="h-full w-auto"/>
+                VSCodium
+            </div>
+            <div class="flex flex-col items-center text-light h-20">
+                <Icon name="skill-icons:vscode-dark" class="h-full w-auto"/>
+                VSCode
+            </div>
+            <div class="flex flex-col items-center text-light h-20">
+                <Icon name="skill-icons:neovim-dark" class="h-full w-auto"/>
+                NeoVim
+            </div>
+            <div class="flex flex-col items-center text-light h-20">
+                <Icon name="skill-icons:eclipse-dark" class="h-full w-auto"/>
+                Eclipse
+            </div>
+        </div>
+
+        <div class="flex flex-col self-center more">
+            <p class="text-middle font-serif hidden more-body">
+                Eclipse was an interesting IDE to learn. It was my first serious development environment outside of 
+                notepad++ and it was a great insight into how development could be much easier with the right tools. 
+                From there I discovered VSCode and later NeoVim. VSCode was great when I was finally able to explore
+                IDEs outside of school projects and I really like the plugin system employed by it. I eventually became
+                interested in VSCodium as it was a completely open-source alternative to VSCode using the same base 
+                editor. Most recently I have been exploring NeoVim to have a faster development experience where I can 
+                spend more time in the terminal.
+            </p>
+            <span class="text-accent1 justify-center self-center hover:cursor-pointer hover:text-accent2 more-link">
+                more &downarrow;
+            </span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-5">
+        <h1 class="text-accent2 font-bold text-2xl self-center">
+            Package Management
+        </h1>
+        <div class="flex flex-wrap gap-5 justify-center">
+            <div class="flex flex-col items-center text-light h-20">
+                <Icon name="catppuccin:npm" class="h-full w-auto"/>
+                npm
+            </div>
+            <div class="flex flex-col items-center text-light h-20">
+                <Icon name="catppuccin:python" class="h-full w-auto"/>
+                pip
+            </div>
+        </div>
+        <div class="flex flex-col self-center more">
+            <p class="text-middle font-serif hidden more-body">
+                I have become familiar with <span class="font-bold">pip</span> and <span class="font-bold">npm</span> 
+                as I have built more and more applications using Python Flask and NodeJS. This not only includes solely
+                installing packages but also version management with additional tools such as pyenv.
+            </p>
+            <span class="text-accent1 justify-center self-center hover:cursor-pointer hover:text-accent2 more-link">
+                more &downarrow;
+            </span>
+        </div>
+    </div>
+    
+</Layout>
+<script>
+    function expandText(this: HTMLElement, e: Event) {
+        let textBody = this.parentElement?.getElementsByClassName("more-body")[0]
+        if(textBody?.classList.contains("hidden")){
+            textBody.classList.remove("hidden")
+            textBody.classList.add("block")
+            this.innerHTML = "less &uparrow;"
+        } else {
+            textBody?.classList.remove("block")
+            textBody?.classList.add("hidden")
+            this.innerHTML = "more &downarrow;"
+        }
+    }
+    function collapseText() {
+
+    }
+    let elements = document.getElementsByClassName('more')
+    for(let i = 0; i < elements.length; i++){
+        let textBody = elements[i].getElementsByClassName('more-body')[0]
+        elements[i].getElementsByClassName('more-link')[0].addEventListener("click", expandText);
+    }
+    console.log(elements)
+</script>
