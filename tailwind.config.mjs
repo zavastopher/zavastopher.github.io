@@ -28,6 +28,10 @@ export default {
             spacing: {
                 'card': '400%',
             },
+            maxWidth: {
+                'half': '50%',
+                'tq' : '95%',
+            },
         },
 	},
 	plugins: [],
